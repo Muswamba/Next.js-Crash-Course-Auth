@@ -1,11 +1,31 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Crash Course
+
+Welcome to the Next.js Crash Course! This series will guide you through creating a full-stack application with Next.js, focusing on authentication, session management, and UI design using Material-UI (MUI).
+
+## Project Overview
+This project is built with [Next.js](https://nextjs.org) and bootstrapped using [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). It includes full authentication functionality such as login, registration, password reset via email, and session management. Additionally, it incorporates Material-UI for styling.
+
+## Features
+- **Authentication**: Login, registration, and password reset using JSON Web Tokens (JWT).
+- **Material-UI Integration**: Use MUI for modern and responsive designs.
+- **Session Management**: Manage user sessions efficiently.
 
 ## Getting Started
 
-First, run the development server:
+### Install Dependencies
+Run the following command to install all required dependencies:
+```bash
+npm install @emotion/cache @emotion/react @emotion/styled @mui/icons-material @mui/material @toolpad/core axios bcryptjs jsonwebtoken next-auth nodemailer react-icons
+```
 
+### Install Dev Dependencies
+To add developer dependencies, run:
+```bash
+npm install @types/bcrypt --save-dev
+```
+
+### Start the Development Server
+First, start the development server:
 ```bash
 npm run dev
 # or
@@ -16,45 +36,34 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
--  [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--  [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-# Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-# next.js-crash-course
-
-Welcome to the first episode of our Next.js Crash Course!
-
-> > > > > > > 816c77ab7c6e392e58038fbf9916a585d80c626d
-
-==============
-Installing Dependencies
-npm install @emotion/cache @emotion/react @emotion/styled @mui/icons-material @mui/material @toolpad/core axios bcryptjs jsonwebtoken next-auth nodemailer react-icons
-
-================
-Install Dev Dependencies
-npm install @types/bcrypt --save-dev
-
-To generate a secret token for JWT, you can use the openssl command directly in your terminal:
+### JWT Token Generation
+To generate a secret token for JWT, use the following OpenSSL commands in your terminal:
+```bash
 openssl rand -base64 32
 openssl rand -hex 32
-=======
-# Next.js-Crash-Course-Auth
-Full Authentication: Login, Registration, Reset Password with Email, MUI, and Session Management
->>>>>>> 234ae2799ac84e8aebbd388b80b190804e15994c
+```
+
+## Learn More About Next.js
+To deepen your understanding, explore the following resources:
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js GitHub Repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+The easiest way to deploy your Next.js app is via the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme). Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for details.
+
+## Highlights
+This crash course covers:
+1. Full Authentication Flow
+   - Login, registration, and reset password.
+   - Securing authentication tokens.
+2. Material-UI Design Integration
+   - Implement MUI components for styling and responsiveness.
+3. Session Management
+   - Efficient and secure user sessions.
+
+---
+Enjoy building your Next.js application and mastering full-stack development!
+
