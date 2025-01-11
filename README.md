@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -53,3 +54,7 @@ npm install @types/bcrypt --save-dev
 To generate a secret token for JWT, you can use the openssl command directly in your terminal:
 openssl rand -base64 32
 openssl rand -hex 32
+=======
+# Next.js-Crash-Course-Auth
+Full Authentication: Login, Registration, Reset Password with Email, MUI, and Session Management
+>>>>>>> 234ae2799ac84e8aebbd388b80b190804e15994c
